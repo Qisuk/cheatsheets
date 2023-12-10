@@ -51,3 +51,24 @@ install the Plugin Registration Tool.
 ```
 pac tool prt
 ```
+
+## power platform CLI
+
+```
+pac install latest
+pac pcf init --namespace Contoso --name Slider --template field
+npm install
+pac pcf init --namespace Contoso --name Slider --template field --run-npm-install
+npm run build
+npm start
+pac pcf push --publisher-prefix dev
+```
+
+## Tools for Visual Studio
+
+
+```
+pac solution init --publisher-name Contoso --publisher-prefix contoso ‑‑outputDirectory vssolution
+pac solution add-reference --path \<path to your Power Apps component framework project\>
+msbuild /t:build /restore
+```
